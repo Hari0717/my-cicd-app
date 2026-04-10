@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Shopping Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+            background: linear-gradient(to right, #406bb29a, #89ecd19e);
+
+    }
+
+    /* Navbar */
+    header {
+      background: #333333a0;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Products */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    .card p {
+      color: #666;
+    }
+    .card button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #333333a0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Ration shop</h1>
+    <nav>
+      
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+      <a href="mailto:tkhari30@gmail.com">Contact</a>
+      <a href="loginpage.html">Log Out</a>
+    </nav>
+  </header>
+
+  <!-- Products Section -->
+  <section class="container">
+    <div class="card">
+      <img src="mainrice.jpeg" alt=" Ration rice">
+      <h3>rice</h3>
+      <p>2₹</p>
+     <a href="Product1.html"> <button>view</button></a>
+    </div>
+
+    <div class="card">
+      <img src="keromain.jpeg" alt="kerosin image">
+      <h3>Kerosene</h3>
+      <p>14₹</p>
+      <a href="product2.html">      <button>view</button>
+</a>
+    </div>
+
+    <div class="card">
+      <img src="attapowder.jpeg" alt="Wheat powder image">
+      <h3>Wheat powder </h3>
+      <p>5₹</p>
+      <a href="product3.html">      <button>view</button>
+</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ration shop | All Rights Reserved</p>
+    <p>☎️Contact : 8086542081  📧 Email : Rationshopgov@gmail.com</p>
+  </footer>
+</body>
+</html>

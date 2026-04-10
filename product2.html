@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page | SmartWatch Pro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffb703;
+    }
+
+    /* Product Section */
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 40px;
+      background: white;
+      margin: 30px auto;
+      max-width: 1100px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-image {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .product-details {
+      flex: 1 1 400px;
+    }
+
+    .product-details h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .product-details p {
+      line-height: 1.6;
+      margin: 15px 0;
+      color: #555;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e63946;
+      margin: 10px 0 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ffb703;
+      color: #111;
+    }
+
+    /* Reviews Section */
+    .reviews {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .reviews h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .review-card {
+      background: white;
+      margin: 15px auto;
+      max-width: 700px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .review-card strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #111;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Ration shop</h1>
+    <nav>
+      <a href="mainpage.html">Home</a>
+      
+      <a href="#">Deals</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <div class="product-image">
+      <img src="keromain.jpeg" alt="img error">
+    </div>
+    <div class="product-details">
+      <h2>kerosene  </h2>
+<p>Kerosene is typically pale yellow or colourless and has a not-unpleasant characteristic odour. It is obtained from petroleum and is used for burning in kerosene lamps and domestic heaters or furnaces, as a fuel or fuel component for jet engines, and as a solvent for greases and insecticid</p>
+      <p class="price">₹2</p>
+      <button class="btn">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews">
+    <h3>Customer Reviews</h3>
+
+    <div class="review-card">
+      <strong>⭐️⭐️⭐️⭐️⭐️  -  Rohan</strong>
+      <p>Good</p>
+    </div>
+
+    <div class="review-card">
+      <strong>⭐️⭐️⭐️⭐️  -  Priya</strong>
+      <p>Very good quality</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ShopZone. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

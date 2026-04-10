@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Transport Tracking System</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #2c3e50;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .card {
+        background: white;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h3 {
+        margin-top: 0;
+        color: #2c3e50;
+    }
+    .map {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-between;
+    }
+    button {
+        padding: 8px 12px;
+        border: none;
+        background: #3498db;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<header>🚚 Transport Tracking Dashboard</header>
+
+<div class="container">
+
+    <!-- Live Location -->
+    <div class="card">
+        <h3>📍 Live Location</h3>
+        <iframe 
+            class="map"
+            src="https://maps.google.com/maps?q=11.8745,75.3704&z=15&output=embed">
+        </iframe>
+    </div>
+
+    <!-- Transport Details -->
+    <div class="card">
+        <h3>🚚 Transport Details</h3>
+        <p><strong>Vehicle:</strong> KL-58 AB 1234</p>
+        <p><strong>Type:</strong> Truck</p>
+        <p><strong>Status:</strong> On the way</p>
+    </div>
+
+    <!-- Driver Details -->
+    <div class="card">
+        <h3>👤 Driver Details</h3>
+        <div class="contact">
+            <span>Name: Rajesh</span>
+            <button onclick="callDriver()">Call</button>
+        </div>
+        <p>Phone: 9876543210</p>
+    </div>
+
+    <!-- Manager Details -->
+    <div class="card">
+        <h3>🧑‍💼 Manager Details</h3>
+        <div class="contact">
+            <span>Name: Arun</span>
+            <button onclick="callManager()">Call</button>
+        </div>
+        <p>Phone: 9123456780</p>
+    </div>
+
+    <!-- ETA -->
+    <div class="card">
+        <h3>⏱️ Estimated Arrival Time</h3>
+        <p id="eta">Calculating...</p>
+    </div>
+
+</div>
+
+<script>
+function callDriver() {
+    window.location.href = "tel:9876543210";
+}
+
+function callManager() {
+    window.location.href = "tel:9123456780";
+}
+
+// Simple ETA calculation (demo)
+function updateETA() {
+    let minutes = Math.floor(Math.random() * 30) + 10;
+    document.getElementById("eta").innerText = minutes + " minutes";
+}
+
+updateETA();
+setInterval(updateETA, 60000);
+</script>
+
+</body>
+</html>
