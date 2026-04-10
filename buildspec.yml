@@ -2,19 +2,13 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      python: 3.9
     commands:
-      - echo Installing dependencies...
-      # Add commands to install any specific python libraries if needed
+      - echo Installing...
+
   build:
     commands:
-      - echo Build started on `date`
-      - echo Compiling/Checking code...
-  post_build:
-    commands:
-      - echo Build completed on `date`
+      - echo Build started
 
 artifacts:
   files:
-    - '**/*' # This packages everything to be sent to your EC2 instance
+    - '**/*'
